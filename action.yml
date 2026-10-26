@@ -1,0 +1,16 @@
+name: "Broken Link Checker by PromoPilot"
+description: "Fail the build when a page links to broken URLs or missing assets."
+author: "Alexandr Krikun"
+branding:
+  icon: "link-2"
+  color: "purple"
+inputs:
+  args:
+    description: "Arguments passed to the broken-links CLI, e.g. \"example.com\""
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Run broken-links
+      shell: bash
+      run: node "$GITHUB_ACTION_PATH/bin/cli.js" ${{ inputs.args }}

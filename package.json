@@ -1,0 +1,55 @@
+{
+  "name": "@promopilot/broken-links",
+  "version": "1.0.0",
+  "description": "Check a page for broken links from the command line: every link (and optionally images, scripts, stylesheets and iframes) is requested in parallel with HEAD/GET fallback, reporting 4xx/5xx, timeouts, DNS failures, invalid URLs and redirects, with the anchor text that needs fixing. Zero-dependency Node.js CLI, library and GitHub Action. Free online version by PromoPilot.",
+  "keywords": [
+    "broken-links",
+    "broken-link-checker",
+    "dead-links",
+    "link-checker",
+    "404",
+    "seo",
+    "technical-seo",
+    "website-maintenance",
+    "qa",
+    "devops",
+    "cli",
+    "nodejs",
+    "github-action",
+    "promopilot"
+  ],
+  "homepage": "https://promopilot.link/en/tools/broken-links.php?utm_source=github&utm_medium=repo&utm_campaign=tools&utm_content=broken-links",
+  "bugs": {
+    "url": "https://github.com/ksanyok/broken-links/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksanyok/broken-links.git"
+  },
+  "license": "MIT",
+  "author": "Alexandr Krikun (https://github.com/ksanyok)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "broken-links": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
