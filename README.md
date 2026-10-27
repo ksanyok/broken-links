@@ -93,7 +93,7 @@ Options:
   --json              Print JSON
   -h, --help          Show this help
 
-Online version (no install): https://promopilot.link/en/tools/broken-links.php
+Online version (no install): https://promopilot.link/en/tools/broken-links.php?utm_source=github&utm_medium=cli&utm_campaign=tools&utm_content=broken-links
 ```
 
 ## Use as a library
